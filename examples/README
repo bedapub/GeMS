@@ -1,0 +1,7 @@
+================================
+Python and R kernels for Jupyter
+================================
+
+pip install jupyter
+conda install -c r r-essentials
+jupyter notebook

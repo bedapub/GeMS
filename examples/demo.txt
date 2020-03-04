@@ -1,0 +1,4 @@
+sed '1s/^/setName\tdesc\tgenes\n/' Tcell_exhaustion_Human.gmt > demo.gmtx
+
+cd GeMS/src/loader_api/
+python upload.py --fl ../../examples/demo.gmtx --gf 0 --so Private --ti 9606 --us badilla --st Immune --do "cell marker"
