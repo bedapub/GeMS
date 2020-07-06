@@ -1,6 +1,6 @@
 # Programmatic Access to GeMS via RESTful API
 
-The Flask-RESTful API is deployed on base URL, *http://bioinfo.bas.roche.com:1234/api/*, over four endpoints:
+The Flask-RESTful API is deployed on base URL, *http://biocomp:1234/api/*, over four endpoints:
   
 | Endpoints     | API Protocols  |
 |:-------------:|:--------------:|
