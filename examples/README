@@ -5,3 +5,12 @@ Python and R kernels for Jupyter
 pip install jupyter
 conda install -c r r-essentials
 jupyter notebook
+
+================================
+Updating parameters
+================================
+
+configuration.yml should be changed to contain the locally deployed GeMs server with hostname and local port.
+
+
+
