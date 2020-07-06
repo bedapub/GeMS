@@ -54,13 +54,13 @@ The parameters are as follows:
 
 ### Example 1 - Get the set names of the genesets that have the subtype 'disease'
 
-GET URL: *http://bioinfo.bas.roche.com:1234/api/genesets?subtype=disease&returnParams=setName*
+GET URL: *http://biocomp:1234/api/genesets?subtype=disease&returnParams=setName*
 
 In Python:
 ```
 from requests import post, get
 
-BASE_URL = 'http://bioinfo.bas.roche.com:1234/api/genesets'
+BASE_URL = 'http://biocomp:1234/api/genesets'
 
 # POST
 
@@ -84,7 +84,7 @@ In R:
 library(httr)
 library(jsonlite)
 
-BASE_URL <- 'http://bioinfo.bas.roche.com:1234/api/genesets'
+BASE_URL <- 'http://biocomp:1234/api/genesets'
 
 # POST
 
@@ -107,7 +107,7 @@ returnJSON <- fromJSON(httr::content(response, 'text'))
 
 ### Example 2a: Get the set names of the genesets with genes: GNB1, GNB2 and GMB3
 
-GET URL: *http://bioinfo.bas.roche.com:1234/api/genesets?genes=GNB1,GNB2,GNB3&returnParams=setName*
+GET URL: *http://biocomp:1234/api/genesets?genes=GNB1,GNB2,GNB3&returnParams=setName*
 
 In Python:
 ```
@@ -151,7 +151,7 @@ returnJSON <- fromJSON(httr::content(response, 'text'))
 
 ### Example 2b: Get the GMT file of the genesets with genes: GNB1, GNB2 and GMB3 (Shell script)
 ```
-wget http://bioinfo.bas.roche.com:1234/api/genesets?genes=GNB1,GNB2,GNB3&returnParams=setName&getGmt=True
+wget http:/biocomp:1234/api/genesets?genes=GNB1,GNB2,GNB3&returnParams=setName&getGmt=True
 ```
 
 ## 2. Geneset similarity analysis - */similar*
@@ -175,11 +175,11 @@ The parameter `threshold` filters genesets with coeffient less than the given va
 
 ### Example: Get genesets that are similar with geneset (dz:770_UP, CREEDS, Public, disease) to a degree greater than 0.5 using the overlap similarity coefficient
 
-GET URL: *http://bioinfo.bas.roche.com:1234/api/similar?setName=dz:770_UP&source=CREEDS&user=Public&subtype=disease&method=overlap&threshold=0.5*
+GET URL: *http://biocomp:1234/api/similar?setName=dz:770_UP&source=CREEDS&user=Public&subtype=disease&method=overlap&threshold=0.5*
 
 In Python:
 ```
-BASE_URL = 'http://bioinfo.bas.roche.com:1234/api/similar'
+BASE_URL = 'http://biocomp:1234/api/similar'
 
 # POST
 
@@ -204,7 +204,7 @@ returnJSON = get(request).json()
 
 In R:
 ```
-BASE_URL <- 'http://bioinfo.bas.roche.com:1234/api/similar'
+BASE_URL <- 'http://biocomp:1234/api/similar'
 
 # POST
 
