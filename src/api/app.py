@@ -48,7 +48,8 @@ class Genesets(Resource):
 			
 		if 'setName' in query:
 			queryString = query['setName']
-			queryJSON = {'$regex': queryString}
+			queryList = queryString.split(",")
+			queryJSON = {'$in':queryList}
 			query['setName'] = queryJSON
 		
 		output = []
