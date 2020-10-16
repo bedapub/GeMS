@@ -232,5 +232,5 @@ returnJSON <- fromJSON(httr::content(response, 'text'))
 ## 3. Adding and removing genesets - */insert* and */remove*
 
 See Jupyter notebooks for examples...
-  - in Python: *https://github.roche.com/BEDA/GeMS/blob/master/examples/Python_Add_Remove_Genesets.ipynb*
-  - in R: *https://github.roche.com/BEDA/GeMS/blob/master/examples/R_Add_Remove_Genesets.ipynb*
+  - in Python: *https://github.com/bedapub/GeMS/blob/master/examples/Python_Add_Remove_Genesets.ipynb*
+  - in R: *https://github.com/bedapub/GeMS/blob/master/examples/R_Add_Remove_Genesets.ipynb*
